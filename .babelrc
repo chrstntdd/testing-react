@@ -1,0 +1,13 @@
+{
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "presets": [
+    "@babel/react",
+    [
+      "@babel/env",
+      {
+        "shippedProposals": true,
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}
