@@ -7,6 +7,7 @@ module.exports = {
     '\\.d\\.ts$'
   ],
   testURL: 'http://localhost:3000',
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   transform: {
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
     '^.+\\.jsx$': '<rootDir>/node_modules/babel-jest'

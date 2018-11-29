@@ -17,7 +17,7 @@ export class SomeUi extends React.Component {
     propFuncOpt: () => {}
   };
 
-  state = { inputValue: '', isHidden: true };
+  state = { inputValue: '', hidden: true };
 
   componentDidUpdate(prevProps) {
     // if the prop has changed between updates, do side effect-y things
@@ -38,7 +38,7 @@ export class SomeUi extends React.Component {
   };
 
   toggleVisibility = () => {
-    this.setState(prevState => ({ isHidden: !prevState.isHidden }));
+    this.setState(prevState => ({ hidden: !prevState.hidden }));
   };
 
   render() {
@@ -50,11 +50,11 @@ export class SomeUi extends React.Component {
           onChange={this.handleInputChange}
         />
         <br />
-        {this.state.inputValue && this.state.inputValue}
+        {this.state.inputValue && <p>this.state.inputValue</p>}
         <br />
-        <button onClick={this.toggleVisibility}>{this.state.isHidden ? 'show' : 'hide'}</button>
+        <button onClick={this.toggleVisibility}>{this.state.hidden ? 'show' : 'hide'}</button>
         <br />
-        {!this.state.isHidden && <p>hidden content</p>}
+        {!this.state.hidden && <p>hidden content</p>}
       </div>
     );
   }

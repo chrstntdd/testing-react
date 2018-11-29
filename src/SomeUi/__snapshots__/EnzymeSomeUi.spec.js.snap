@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Enzyme testing render method should render some content 1`] = `
+<div>
+  <input
+    className="test-input"
+    onChange={[Function]}
+    placeholder="Enter some text whydontcha"
+  />
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    show
+  </button>
+  <br />
+</div>
+`;
