@@ -50,7 +50,7 @@ export class SomeUi extends React.Component {
           onChange={this.handleInputChange}
         />
         <br />
-        {this.state.inputValue && <p>this.state.inputValue</p>}
+        {this.state.inputValue && <p>{this.state.inputValue}</p>}
         <br />
         <button onClick={this.toggleVisibility}>{this.state.hidden ? 'show' : 'hide'}</button>
         <br />

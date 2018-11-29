@@ -6,7 +6,7 @@ import SomeUi from '.';
 
 configure({ adapter: new Adapter() });
 
-describe('Enzyme testing', () => {
+describe.skip('Enzyme testing', () => {
   let props;
 
   beforeEach(() => {
