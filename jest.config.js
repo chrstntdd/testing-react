@@ -1,6 +1,6 @@
 module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  collectCoverageFrom: ['src/**/*.{js,ts,tsx,jsx}'],
+  collectCoverageFrom: ['src/SomeUi/*.{js,ts,tsx,jsx}'],
   coverageReporters: ['lcov'],
   testPathIgnorePatterns: [
     '<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]',

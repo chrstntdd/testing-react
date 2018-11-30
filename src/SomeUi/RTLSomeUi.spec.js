@@ -32,13 +32,13 @@ describe('RTL testing', () => {
       const hideButton = getByText(/hide/i);
 
       expect(hideButton).toBeInTheDocument();
-      expect(queryByText(/hidden content/i)).toBeInTheDocument();
+      expect(getByText(/hidden content/i)).toBeInTheDocument();
       expect(queryByText(/show/i)).not.toBeInTheDocument();
 
       fireEvent.click(hideButton);
 
       expect(queryByText(/hidden content/i)).not.toBeInTheDocument();
-      expect(queryByText(/show/i)).toBeInTheDocument();
+      expect(getByText(/show/i)).toBeInTheDocument();
     });
   });
 
